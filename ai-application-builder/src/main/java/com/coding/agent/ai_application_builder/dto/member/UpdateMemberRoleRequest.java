@@ -1,4 +1,8 @@
 package com.coding.agent.ai_application_builder.dto.member;
 
-public record UpdateMemberRoleRequest(ProjectRole role) {
+import com.coding.agent.ai_application_builder.enums.ProjectRole;
+import jakarta.validation.constraints.NotNull;
+
+public record UpdateMemberRoleRequest(
+        @NotNull ProjectRole role) {
 }

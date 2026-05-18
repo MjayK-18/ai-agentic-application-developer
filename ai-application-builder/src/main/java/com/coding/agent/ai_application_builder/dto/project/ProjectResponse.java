@@ -1,6 +1,8 @@
 package com.coding.agent.ai_application_builder.dto.project;
 
 
+import com.coding.agent.ai_application_builder.dto.auth.UserProfileResponse;
+
 import java.time.Instant;
 
 public record ProjectResponse(

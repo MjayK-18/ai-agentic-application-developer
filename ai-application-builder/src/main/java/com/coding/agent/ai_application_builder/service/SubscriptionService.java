@@ -4,7 +4,9 @@ import com.coding.agent.ai_application_builder.dto.subscription.CheckoutRequest;
 import com.coding.agent.ai_application_builder.dto.subscription.CheckoutResponse;
 import com.coding.agent.ai_application_builder.dto.subscription.PortalResponse;
 import com.coding.agent.ai_application_builder.dto.subscription.SubscriptionResponse;
+import org.springframework.stereotype.Service;
 
+@Service
 public interface SubscriptionService {
     SubscriptionResponse getCurrentSubscription(Long userId);
 
