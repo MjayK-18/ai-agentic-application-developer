@@ -4,19 +4,18 @@ package com.coding.agent.ai_application_builder.service;
 import com.coding.agent.ai_application_builder.dto.project.ProjectRequest;
 import com.coding.agent.ai_application_builder.dto.project.ProjectResponse;
 import com.coding.agent.ai_application_builder.dto.project.ProjectSummaryResponse;
-import org.springframework.stereotype.Service;
+import org.jspecify.annotations.Nullable;
 
 import java.util.List;
 
-@Service
 public interface ProjectService {
-    List<ProjectSummaryResponse> getUserProjects(Long userId);
+    List<ProjectSummaryResponse> getUserProjects();
 
-    ProjectResponse getUserProjectById(Long id, Long userId);
+    ProjectSummaryResponse getUserProjectById(Long id);
 
-    ProjectResponse createProject(ProjectRequest request, Long userId);
+    ProjectResponse createProject(ProjectRequest request);
 
-    ProjectResponse updateProject(Long id, ProjectRequest request, Long userId);
+    ProjectResponse updateProject(Long id, ProjectRequest request);
 
-    void softDelete(Long id, Long userId);
+    void softDelete(Long id);
 }

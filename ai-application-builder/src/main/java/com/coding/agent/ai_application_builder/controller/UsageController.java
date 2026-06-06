@@ -1,6 +1,6 @@
 package com.coding.agent.ai_application_builder.controller;
 
-import com.coding.agent.ai_application_builder.dto.subscription.PlanLimitsResponse;
+
 import com.coding.agent.ai_application_builder.dto.subscription.UsageTodayResponse;
 import com.coding.agent.ai_application_builder.service.UsageService;
 import lombok.RequiredArgsConstructor;
@@ -19,12 +19,8 @@ public class UsageController {
     @GetMapping("/today")
     public ResponseEntity<UsageTodayResponse> getTodayUsage() {
         Long userId = 1L;
-        return ResponseEntity.ok(usageService.getTodayUsageOfUser(userId));
+//        return ResponseEntity.ok(usageService.getTodayUsageOfUser(userId));
+        return null;
     }
 
-    @GetMapping("/limits")
-    public ResponseEntity<PlanLimitsResponse> getPlanLimits() {
-        Long userId = 1L;
-        return ResponseEntity.ok(usageService.getCurrentSubscriptionLimitsOfUser(userId));
-    }
 }

@@ -5,6 +5,8 @@ import com.coding.agent.ai_application_builder.dto.project.ProjectRequest;
 import com.coding.agent.ai_application_builder.dto.project.ProjectResponse;
 import com.coding.agent.ai_application_builder.dto.project.ProjectSummaryResponse;
 import com.coding.agent.ai_application_builder.service.ProjectService;
+
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

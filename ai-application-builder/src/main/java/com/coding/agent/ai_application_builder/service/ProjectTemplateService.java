@@ -1,4 +1,4 @@
-package com.codingshuttle.projects.lovable_clone.service;
+package com.coding.agent.ai_application_builder.service;
 
 public interface ProjectTemplateService {
 
